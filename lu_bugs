@@ -1,0 +1,929 @@
+//  
+//  MARSS: Cycle Accurate Systems simulator for x86
+//  Copyright 1999-2007 Matt T. Yourst <yourst@yourst.com>
+//  Copyright 2009-2011 Avadh Patel <avadh4all@gmail.com>
+// 
+//  Git branch 'lap' on date Sun Sep 20 20:18:13 2015 (HEAD: ce8ee0)
+//  Built Sep 21 2015 11:19:33 on BUILDHOST using gcc-4.7
+//  With 1 simulated cores
+//  Running on bumblebee.cerc.utexas.edu
+//  
+
+Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      /home/local/bumblebee/masri/lu_bugs
+  -loglevel     1
+  -startlog     0
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        /home/local/bumblebee/masri/lu_bugs.stats
+  -yamlstats    /home/local/bumblebee/masri/lu_bugs.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     0
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+  -enable-mcpat disabled
+  -power-period 0
+  -dump-area    disabled
+  -dump-tdp     disabled
+  -dump-mcpat-stats disabled
+  -dump-voltage disabled
+  -powerfile    power.dat
+  -core-tech    65
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          disabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      /home/local/bumblebee/masri/lu_bugs
+  -loglevel     1
+  -startlog     0
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        /home/local/bumblebee/masri/lu_bugs.stats
+  -yamlstats    /home/local/bumblebee/masri/lu_bugs.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     2668 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+  -enable-mcpat disabled
+  -power-period 0
+  -dump-area    disabled
+  -dump-tdp     disabled
+  -dump-mcpat-stats disabled
+  -dump-voltage disabled
+  -powerfile    power.dat
+  -core-tech    65
+
+Command received: -run 
+Configuration changed: Active parameters:
+  -help         disabled
+  -run          enabled
+  -stop         disabled
+  -kill         disabled
+  -flush        disabled
+  -quiet        disabled
+  -logfile      /home/local/bumblebee/masri/lu_bugs
+  -loglevel     1
+  -startlog     0
+  -startlogrip  18446744073709551615
+  -consolelog   disabled
+  -logbufsize   524288
+  -logfilesize  67108864
+  -dump-state-now disabled
+  -screenshot   
+  -log-user-only disabled
+  -dump-config-file 
+  -logMemory    disabled
+  -stats        /home/local/bumblebee/masri/lu_bugs.stats
+  -yamlstats    /home/local/bumblebee/masri/lu_bugs.stats
+  -stats-format yaml
+  -snapshot-cycles infinity
+  -snapshot-now 
+  -time-stats-logfile 
+  -time-stats-period 10000
+  -startrip     18446744073709551615
+  -fast-fwd-insns 0
+  -fast-fwd-user-insns 0
+  -fast-fwd-checkpoint 
+  -stopinsns    infinity
+  -stopcycle    infinity
+  -stopiter     infinity
+  -stoprip      18446744073709551615
+  -stop-at-marker infinity
+  -stop-at-marker-hits infinity
+  -stopinsns-rel infinity
+  -bbinsns      65536
+  -flushevery   infinity
+  -kill-after-run disabled
+  -event-record 
+  -event-record-stop disabled
+  -event-replay 
+  -corefreq     2668 M
+  -enable-checker disabled
+  -checker-startrip 18446744073709551615
+  -perfect-cache disabled
+  -dumpcode     test.dat
+  -dump-at-end  disabled
+  -bbdump       
+  -verify-cache disabled
+  -machine      single_core
+  -enable-mongo disabled
+  -mongo-server 127.0.0.1
+  -mongo-port   27017
+  -bench-name   
+  -tags         
+  -run-tests    disabled
+  -execute-after-kill 
+  -sync         0
+  -simpoint     
+  -simpoint-interval 10 M
+  -simpoint-chk-name simpoint
+  -enable-mcpat disabled
+  -power-period 0
+  -dump-area    disabled
+  -dump-tdp     disabled
+  -dump-mcpat-stats disabled
+  -dump-voltage disabled
+  -powerfile    power.dat
+  -core-tech    65
+
+Initializing core 'base'
+xeon_#
+# Simulated Machine Configuration
+#
+---
+machine:
+  name: single_core
+  cpu_contexts: 1
+  freq: 2668000000
+  xeon_0_0:
+    type: core
+    threads: 1
+    iq_size: 64
+    phys_reg_files: 4
+    phys_reg_file_int_size: 512
+    phys_reg_file_fp_size: 512
+    phys_reg_file_st_size: 36
+    phys_reg_file_br_size: 24
+    fetch_q_size: 48
+    frontend_stages: 4
+    itlb_size: 512
+    dtlb_size: 512
+    total_FUs: 64
+    int_FUs: 16
+    fp_FUs: 16
+    ld_FUs: 16
+    st_FUs: 16
+    frontend_width: 7
+    dispatch_width: 7
+    issue_width: 7
+    writeback_width: 7
+    commit_width: 7
+    max_branch_in_flight: 24
+    per_thread:
+      rob_size: 256
+      lsq_size: 84
+  core_0_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  lap_0_cont:
+  # This is a software related structure which has no relevence to any hardware module.
+    type: core_controller
+    pending_queue_size: 128
+    icache_buffer_size: 32
+  L1_I_0:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 2
+    pending_queue_size: 128
+    config: writeback
+  L1_D_0:
+    type: cache
+    size: 32768
+    sets: 64
+    ways: 8
+    line_size: 64
+    latency: 2
+    pending_queue_size: 128
+    config: writeback
+  L2_0:
+    type: cache
+    size: 262144
+    sets: 256
+    ways: 16
+    line_size: 64
+    latency: 6
+    pending_queue_size: 128
+    config: writeback
+  L3_0:
+    type: cache
+    size: 12582912
+    sets: 6144
+    ways: 32
+    line_size: 64
+    latency: 27
+    pending_queue_size: 256
+    coherence: MESI
+  MEM_0:
+    type: dram_cont
+    RAM_size: 8589934592
+    number_of_banks: 64
+    latency: 133
+    latency_ns: 49.8501
+    pending_queue_size: 128
+  p2p_core_L1_I_0:
+    type: interconnect
+    latency: 0
+  p2p_core_L1_D_0:
+    type: interconnect
+    latency: 0
+  p2p_L1_I_0_L2_00:
+    type: interconnect
+    latency: 0
+  p2p_L2_0_L1_D_00:
+    type: interconnect
+    latency: 0
+  p2p_L3_0_L2_00:
+    type: interconnect
+    latency: 0
+  bus_L3_0_lap_0_MEM_00:
+    type: interconnect
+    latency: 0
+    arbitrate_latency: 1
+    per_cont_queue_size: 16
+
+# End Machine Configuration
+Dumped all machine configuration
+Start logging at level 1 in cycle 0
+Completed             0 cycles,             0 commits:         0 Hz,         0 insns/sec
+Completed         69000 cycles,         30678 commits:    338858 Hz,    150659 insns/sec
+Completed        103000 cycles,         75850 commits:    166893 Hz,    221733 insns/sec
+Completed        131000 cycles,        124359 commits:    135558 Hz,    234849 insns/sec
+Completed        158000 cycles,        172367 commits:    134383 Hz,    238943 insns/sec
+Completed        185000 cycles,        220017 commits:    134551 Hz,    237457 insns/sec
+Completed        214000 cycles,        269482 commits:    140153 Hz,    239057 insns/sec
+Completed        241000 cycles,        318501 commits:    132156 Hz,    239932 insns/sec
+Completed        269000 cycles,        369261 commits:    136448 Hz,    247362 insns/sec
+Completed        297000 cycles,        419953 commits:    138089 Hz,    250000 insns/sec
+Completed        326000 cycles,        473405 commits:    140632 Hz,    259210 insns/sec
+Completed        355000 cycles,        526962 commits:    143436 Hz,    264897 insns/sec
+Completed        383000 cycles,        581588 commits:    138400 Hz,    270010 insns/sec
+Completed        412000 cycles,        643727 commits:    142230 Hz,    304761 insns/sec
+Completed        441000 cycles,        705576 commits:    143690 Hz,    306451 insns/sec
+Completed        471000 cycles,        768090 commits:    149713 Hz,    311972 insns/sec
+Completed        502000 cycles,        831731 commits:    154824 Hz,    317844 insns/sec
+Completed        544000 cycles,        893373 commits:    202877 Hz,    297756 insns/sec
+Completed        575000 cycles,        942919 commits:    149841 Hz,    239484 insns/sec
+Completed        603000 cycles,       1015369 commits:    138855 Hz,    359288 insns/sec
+Completed        632000 cycles,       1091243 commits:    140454 Hz,    367478 insns/sec
+Completed        662000 cycles,       1161470 commits:    149494 Hz,    349951 insns/sec
+Completed        690000 cycles,       1233263 commits:    138688 Hz,    355601 insns/sec
+Completed        718000 cycles,       1304864 commits:    139512 Hz,    356757 insns/sec
+Completed        748000 cycles,       1376952 commits:    149642 Hz,    359581 insns/sec
+Completed        777000 cycles,       1453920 commits:    139747 Hz,    370899 insns/sec
+Completed        805000 cycles,       1527231 commits:    139524 Hz,    365309 insns/sec
+Completed        836000 cycles,       1597544 commits:    153959 Hz,    349204 insns/sec
+Completed        865000 cycles,       1674712 commits:    140417 Hz,    373646 insns/sec
+Completed        894000 cycles,       1750861 commits:    140941 Hz,    370087 insns/sec
+Completed        925000 cycles,       1826882 commits:    149677 Hz,    367053 insns/sec
+Completed        954000 cycles,       1903921 commits:    140547 Hz,    373366 insns/sec
+Completed        984000 cycles,       1975606 commits:    145522 Hz,    347725 insns/sec
+Completed       1013000 cycles,       2052423 commits:    140531 Hz,    372248 insns/sec
+Completed       1045000 cycles,       2129073 commits:    153653 Hz,    368048 insns/sec
+Completed       1074000 cycles,       2206519 commits:    142983 Hz,    381845 insns/sec
+Completed       1105000 cycles,       2282448 commits:    151985 Hz,    372261 insns/sec
+Completed       1134000 cycles,       2358637 commits:    141536 Hz,    371845 insns/sec
+Completed       1163000 cycles,       2436105 commits:    143554 Hz,    383479 insns/sec
+Completed       1194000 cycles,       2510919 commits:    151393 Hz,    365365 insns/sec
+Completed       1224000 cycles,       2588249 commits:    145359 Hz,    374687 insns/sec
+Completed       1255000 cycles,       2662570 commits:    152213 Hz,    364923 insns/sec
+Completed       1284000 cycles,       2739858 commits:    141662 Hz,    377544 insns/sec
+Completed       1315000 cycles,       2814841 commits:    152066 Hz,    367819 insns/sec
+Completed       1344000 cycles,       2892107 commits:    144381 Hz,    384681 insns/sec
+Completed       1374000 cycles,       2968691 commits:    149704 Hz,    382166 insns/sec
+Completed       1404000 cycles,       3044140 commits:    147811 Hz,    371741 insns/sec
+Completed       1433000 cycles,       3121206 commits:    143256 Hz,    380696 insns/sec
+Completed       1464000 cycles,       3196302 commits:    151111 Hz,    366059 insns/sec
+Completed       1493000 cycles,       3273643 commits:    144343 Hz,    384954 insns/sec
+Completed       1524000 cycles,       3348701 commits:    152768 Hz,    369888 insns/sec
+Completed       1554000 cycles,       3428124 commits:    145425 Hz,    385003 insns/sec
+Completed       1585000 cycles,       3502999 commits:    150498 Hz,    363502 insns/sec
+Completed       1615000 cycles,       3580869 commits:    147155 Hz,    381966 insns/sec
+Completed       1646000 cycles,       3656038 commits:    152958 Hz,    370894 insns/sec
+Completed       1675000 cycles,       3732481 commits:    142493 Hz,    375607 insns/sec
+Completed       1704000 cycles,       3810034 commits:    144763 Hz,    387131 insns/sec
+Completed       1735000 cycles,       3884748 commits:    150967 Hz,    363850 insns/sec
+Completed       1764000 cycles,       3962303 commits:    143394 Hz,    383480 insns/sec
+Completed       1795000 cycles,       4036319 commits:    153096 Hz,    365535 insns/sec
+Completed       1825000 cycles,       4116091 commits:    144694 Hz,    384751 insns/sec
+Completed       1856000 cycles,       4190804 commits:    150323 Hz,    362293 insns/sec
+Completed       1885000 cycles,       4267479 commits:    142231 Hz,    376054 insns/sec
+Completed       1917000 cycles,       4344057 commits:    154691 Hz,    370186 insns/sec
+Completed       1946000 cycles,       4421636 commits:    143974 Hz,    385151 insns/sec
+Completed       1975000 cycles,       4498571 commits:    144896 Hz,    384401 insns/sec
+Completed       2007000 cycles,       4574502 commits:    154527 Hz,    366669 insns/sec
+Completed       2036000 cycles,       4652070 commits:    142538 Hz,    381254 insns/sec
+Completed       2075000 cycles,       4664247 commits:    188462 Hz,     58843 insns/sec
+Completed       2108000 cycles,       4670848 commits:    159397 Hz,     31884 insns/sec
+Completed       2137000 cycles,       4677124 commits:    140991 Hz,     30512 insns/sec
+Completed       2166000 cycles,       4683640 commits:    139310 Hz,     31301 insns/sec
+Completed       2194000 cycles,       4689841 commits:    138384 Hz,     30647 insns/sec
+Completed       2225000 cycles,       4696565 commits:    153291 Hz,     33249 insns/sec
+Completed       2257000 cycles,       4703424 commits:    157180 Hz,     33690 insns/sec
+Completed       2302000 cycles,       4718017 commits:    222781 Hz,     72245 insns/sec
+Completed       2331000 cycles,       4771619 commits:    143939 Hz,    266050 insns/sec
+Completed       2358000 cycles,       4838263 commits:    131409 Hz,    324356 insns/sec
+Completed       2385000 cycles,       4907509 commits:    134974 Hz,    346164 insns/sec
+Completed       2413000 cycles,       4982544 commits:    136704 Hz,    366343 insns/sec
+Completed       2441000 cycles,       5059300 commits:    135092 Hz,    370326 insns/sec
+Completed       2468000 cycles,       5135841 commits:    133735 Hz,    379120 insns/sec
+Completed       2495000 cycles,       5212442 commits:    132658 Hz,    376363 insns/sec
+Completed       2522000 cycles,       5289089 commits:    132705 Hz,    376720 insns/sec
+Completed       2549000 cycles,       5367805 commits:    133012 Hz,    387785 insns/sec
+Completed       2576000 cycles,       5446320 commits:    133364 Hz,    387818 insns/sec
+Completed       2603000 cycles,       5524058 commits:    131838 Hz,    379587 insns/sec
+Completed       2629000 cycles,       5601623 commits:    128991 Hz,    384816 insns/sec
+Completed       2656000 cycles,       5681858 commits:    131252 Hz,    390038 insns/sec
+Completed       2683000 cycles,       5761830 commits:    131816 Hz,    390429 insns/sec
+Completed       2710000 cycles,       5840283 commits:    131431 Hz,    381897 insns/sec
+Completed       2736000 cycles,       5919006 commits:    126994 Hz,    384515 insns/sec
+Completed       2762000 cycles,       5997161 commits:    129101 Hz,    388074 insns/sec
+Completed       2789000 cycles,       6078627 commits:    130456 Hz,    393621 insns/sec
+Completed       2816000 cycles,       6160103 commits:    130638 Hz,    394218 insns/sec
+Completed       2842000 cycles,       6237226 commits:    128926 Hz,    382430 insns/sec
+Completed       2868000 cycles,       6316915 commits:    129507 Hz,    396936 insns/sec
+Completed       2894000 cycles,       6396392 commits:    127404 Hz,    389451 insns/sec
+Completed       2921000 cycles,       6478518 commits:    130823 Hz,    397927 insns/sec
+Completed       2948000 cycles,       6560807 commits:    130508 Hz,    397755 insns/sec
+Completed       2982000 cycles,       6596527 commits:    163585 Hz,    171861 insns/sec
+Completed       3009000 cycles,       6604765 commits:    134711 Hz,     41102 insns/sec
+Completed       3036000 cycles,       6613381 commits:    130774 Hz,     41731 insns/sec
+Completed       3068000 cycles,       6623544 commits:    156277 Hz,     49632 insns/sec
+Completed       3099000 cycles,       6633177 commits:    152560 Hz,     47406 insns/sec
+Completed       3126000 cycles,       6687907 commits:    133642 Hz,    270897 insns/sec
+Completed       3154000 cycles,       6758032 commits:    137280 Hz,    343814 insns/sec
+Completed       3181000 cycles,       6830787 commits:    132872 Hz,    358042 insns/sec
+Completed       3209000 cycles,       6907179 commits:    135655 Hz,    370106 insns/sec
+Completed       3236000 cycles,       6983880 commits:    133524 Hz,    379312 insns/sec
+Completed       3263000 cycles,       7061242 commits:    133087 Hz,    381330 insns/sec
+Completed       3290000 cycles,       7138494 commits:    131706 Hz,    376836 insns/sec
+Completed       3317000 cycles,       7217844 commits:    130601 Hz,    383824 insns/sec
+Completed       3344000 cycles,       7297164 commits:    132138 Hz,    388194 insns/sec
+Completed       3371000 cycles,       7375969 commits:    130910 Hz,    382088 insns/sec
+Completed       3398000 cycles,       7457050 commits:    131471 Hz,    394808 insns/sec
+Completed       3425000 cycles,       7538051 commits:    131425 Hz,    394281 insns/sec
+Completed       3451000 cycles,       7615391 commits:    129539 Hz,    385331 insns/sec
+Completed       3477000 cycles,       7693492 commits:    129640 Hz,    389424 insns/sec
+Completed       3504000 cycles,       7775787 commits:    130259 Hz,    397026 insns/sec
+Completed       3531000 cycles,       7858097 commits:    130277 Hz,    397153 insns/sec
+Completed       3558000 cycles,       7940550 commits:    130530 Hz,    398616 insns/sec
+Completed       3584000 cycles,       8018488 commits:    127725 Hz,    382872 insns/sec
+Completed       3611000 cycles,       8101317 commits:    130211 Hz,    399454 insns/sec
+Completed       3638000 cycles,       8184431 commits:    130286 Hz,    401059 insns/sec
+Completed       3665000 cycles,       8267398 commits:    130138 Hz,    399895 insns/sec
+Completed       3717000 cycles,       8329768 commits:    257515 Hz,    308870 insns/sec
+Completed       3759000 cycles,       8361992 commits:    203220 Hz,    155918 insns/sec
+Completed       3783000 cycles,       8399772 commits:    116120 Hz,    182793 insns/sec
+Completed       3807000 cycles,       8437454 commits:    117440 Hz,    184391 insns/sec
+Completed       3831000 cycles,       8475548 commits:    116520 Hz,    184946 insns/sec
+Completed       3879000 cycles,       8515732 commits:    238183 Hz,    199398 insns/sec
+Completed       3963000 cycles,       8561292 commits:    419585 Hz,    227575 insns/sec
+Completed       4050000 cycles,       8608452 commits:    433168 Hz,    234807 insns/sec
+Completed       4139000 cycles,       8656612 commits:    442183 Hz,    239275 insns/sec
+Completed       4227000 cycles,       8704343 commits:    435941 Hz,    236453 insns/sec
+Completed       4313000 cycles,       8750872 commits:    427716 Hz,    231409 insns/sec
+Completed       4400000 cycles,       8797972 commits:    433342 Hz,    234602 insns/sec
+Completed       4488000 cycles,       8845732 commits:    437477 Hz,    237431 insns/sec
+Completed       4576000 cycles,       8893492 commits:    435943 Hz,    236598 insns/sec
+Completed       4664000 cycles,       8941172 commits:    438387 Hz,    237526 insns/sec
+Completed       4755000 cycles,       8990272 commits:    453924 Hz,    244919 insns/sec
+Completed       4845000 cycles,       9038932 commits:    446677 Hz,    241503 insns/sec
+Completed       4936000 cycles,       9088032 commits:    452565 Hz,    244186 insns/sec
+Completed       5027000 cycles,       9137212 commits:    450970 Hz,    243722 insns/sec
+Completed       5114000 cycles,       9184392 commits:    434995 Hz,    235897 insns/sec
+Completed       5201000 cycles,       9231592 commits:    432317 Hz,    234544 insns/sec
+Completed       5288000 cycles,       9278672 commits:    433398 Hz,    234533 insns/sec
+Completed       5376000 cycles,       9326372 commits:    436549 Hz,    236629 insns/sec
+Completed       5463000 cycles,       9373552 commits:    434245 Hz,    235490 insns/sec
+Completed       5551000 cycles,       9421313 commits:    435666 Hz,    236453 insns/sec
+Completed       5639000 cycles,       9469072 commits:    435367 Hz,    236280 insns/sec
+Completed       5727000 cycles,       9516712 commits:    435744 Hz,    235896 insns/sec
+Completed       5818000 cycles,       9565812 commits:    452206 Hz,    243992 insns/sec
+Completed       5909000 cycles,       9614712 commits:    451439 Hz,    242586 insns/sec
+Completed       6000000 cycles,       9663872 commits:    451141 Hz,    243715 insns/sec
+Completed       6090000 cycles,       9712472 commits:    445838 Hz,    240752 insns/sec
+Completed       6180000 cycles,       9760972 commits:    445900 Hz,    240291 insns/sec
+Completed       6270000 cycles,       9809572 commits:    449039 Hz,    242481 insns/sec
+Completed       6361000 cycles,       9858732 commits:    449298 Hz,    242719 insns/sec
+Completed       6452000 cycles,       9907832 commits:    450502 Hz,    243073 insns/sec
+Completed       6543000 cycles,       9956732 commits:    451690 Hz,    242721 insns/sec
+Completed       6631000 cycles,      10004232 commits:    439609 Hz,    237289 insns/sec
+Completed       6722000 cycles,      10053292 commits:    450919 Hz,    243100 insns/sec
+Completed       6813000 cycles,      10102292 commits:    450247 Hz,    242440 insns/sec
+Completed       6904000 cycles,      10151033 commits:    450769 Hz,    241439 insns/sec
+Completed       6994000 cycles,      10199592 commits:    446799 Hz,    241068 insns/sec
+Completed       7076000 cycles,      10243752 commits:    406761 Hz,    219055 insns/sec
+Completed       7166000 cycles,      10292352 commits:    449738 Hz,    242858 insns/sec
+Completed       7256000 cycles,      10340912 commits:    448486 Hz,    241983 insns/sec
+Completed       7346000 cycles,      10389532 commits:    447388 Hz,    241689 insns/sec
+Completed       7436000 cycles,      10438112 commits:    446823 Hz,    241185 insns/sec
+Completed       7524000 cycles,      10485612 commits:    436326 Hz,    235517 insns/sec
+Completed       7613000 cycles,      10533812 commits:    442547 Hz,    239671 insns/sec
+Completed       7700000 cycles,      10581412 commits:    430462 Hz,    235517 insns/sec
+Completed       7789000 cycles,      10629272 commits:    444231 Hz,    238886 insns/sec
+Completed       7877000 cycles,      10677132 commits:    435408 Hz,    236802 insns/sec
+Completed       7965000 cycles,      10724432 commits:    436795 Hz,    234777 insns/sec
+Completed       8055000 cycles,      10772932 commits:    445797 Hz,    240235 insns/sec
+Completed       8145000 cycles,      10821392 commits:    448604 Hz,    241548 insns/sec
+Completed       8235000 cycles,      10869892 commits:    449698 Hz,    242337 insns/sec
+Completed       8325000 cycles,      10918352 commits:    447809 Hz,    241120 insns/sec
+Completed       8404000 cycles,      10956178 commits:    379491 Hz,    181704 insns/sec
+Completed       8475000 cycles,      10960193 commits:    354158 Hz,     20027 insns/sec
+Completed       8580000 cycles,      10961832 commits:    523167 Hz,      8166 insns/sec
+Completed       8635000 cycles,      10962577 commits:    269365 Hz,      3648 insns/sec
+Completed       8656000 cycles,      10962875 commits:    103926 Hz,      1474 insns/sec
+Completed       8677000 cycles,      10963173 commits:    104436 Hz,      1482 insns/sec
+Completed       8699000 cycles,      10963471 commits:    108855 Hz,      1474 insns/sec
+Completed       8722000 cycles,      10963918 commits:    114752 Hz,      2230 insns/sec
+Completed       8745000 cycles,      10964216 commits:    113791 Hz,      1474 insns/sec
+Completed       8768000 cycles,      10964514 commits:    114600 Hz,      1484 insns/sec
+Completed       8791000 cycles,      10964812 commits:    111437 Hz,      1443 insns/sec
+Completed       8814000 cycles,      10965259 commits:    113340 Hz,      2202 insns/sec
+Completed       8837000 cycles,      10965557 commits:    114915 Hz,      1488 insns/sec
+Completed       8851000 cycles,      10965706 commits:     68854 Hz,       732 insns/sec
+Completed       8863000 cycles,      10966004 commits:     56463 Hz,      1402 insns/sec
+Completed       8875000 cycles,      10966153 commits:     57236 Hz,       710 insns/sec
+Completed       8887000 cycles,      10966302 commits:     58837 Hz,       730 insns/sec
+Completed       8899000 cycles,      10966451 commits:     58834 Hz,       730 insns/sec
+Completed       8911000 cycles,      10966600 commits:     58339 Hz,       724 insns/sec
+Completed       8923000 cycles,      10966898 commits:     58940 Hz,      1463 insns/sec
+Completed       8935000 cycles,      10967047 commits:     57548 Hz,       714 insns/sec
+Completed       8947000 cycles,      10967196 commits:     59319 Hz,       736 insns/sec
+Completed       8959000 cycles,      10967345 commits:     58693 Hz,       728 insns/sec
+Completed       8971000 cycles,      10967494 commits:     58534 Hz,       726 insns/sec
+Completed       8983000 cycles,      10967643 commits:     58763 Hz,       729 insns/sec
+Completed       8995000 cycles,      10967941 commits:     57657 Hz,      1431 insns/sec
+Completed       9007000 cycles,      10968090 commits:     59121 Hz,       734 insns/sec
+Completed       9019000 cycles,      10968239 commits:     58365 Hz,       724 insns/sec
+Completed       9031000 cycles,      10968388 commits:     59254 Hz,       735 insns/sec
+Completed       9043000 cycles,      10968537 commits:     58523 Hz,       726 insns/sec
+Completed       9055000 cycles,      10968835 commits:     57684 Hz,      1432 insns/sec
+Completed       9071000 cycles,      10968984 commits:     79594 Hz,       741 insns/sec
+Completed       9092000 cycles,      10969282 commits:    103649 Hz,      1470 insns/sec
+Completed       9115000 cycles,      10969729 commits:    113530 Hz,      2206 insns/sec
+Completed       9138000 cycles,      10970027 commits:    113257 Hz,      1467 insns/sec
+Completed       9160000 cycles,      10970325 commits:    105734 Hz,      1432 insns/sec
+Completed       9183000 cycles,      10970623 commits:    113401 Hz,      1469 insns/sec
+Completed       9206000 cycles,      10971070 commits:    113937 Hz,      2214 insns/sec
+Completed       9229000 cycles,      10971368 commits:    114157 Hz,      1479 insns/sec
+Completed       9252000 cycles,      10971666 commits:    114437 Hz,      1482 insns/sec
+Completed       9275000 cycles,      10971964 commits:    109496 Hz,      1418 insns/sec
+Completed       9290000 cycles,      10972262 commits:     70952 Hz,      1409 insns/sec
+Completed       9302000 cycles,      10972411 commits:     56573 Hz,       702 insns/sec
+Completed       9314000 cycles,      10972560 commits:     57788 Hz,       717 insns/sec
+Completed       9326000 cycles,      10972709 commits:     58669 Hz,       728 insns/sec
+Completed       9338000 cycles,      10973007 commits:     57571 Hz,      1429 insns/sec
+Completed       9350000 cycles,      10973156 commits:     57442 Hz,       713 insns/sec
+Completed       9362000 cycles,      10973305 commits:     59335 Hz,       736 insns/sec
+Completed       9374000 cycles,      10973454 commits:     58613 Hz,       727 insns/sec
+Completed       9386000 cycles,      10973603 commits:     59039 Hz,       733 insns/sec
+Completed       9398000 cycles,      10973752 commits:     56994 Hz,       707 insns/sec
+Completed       9410000 cycles,      10974050 commits:     58413 Hz,      1450 insns/sec
+Completed       9422000 cycles,      10974199 commits:     58170 Hz,       722 insns/sec
+Completed       9434000 cycles,      10974348 commits:     57954 Hz,       719 insns/sec
+Completed       9446000 cycles,      10974497 commits:     59321 Hz,       736 insns/sec
+Completed       9458000 cycles,      10974646 commits:     58506 Hz,       726 insns/sec
+Completed       9470000 cycles,      10974944 commits:     59194 Hz,      1469 insns/sec
+Completed       9482000 cycles,      10975093 commits:     57492 Hz,       713 insns/sec
+Completed       9494000 cycles,      10975242 commits:     58415 Hz,       725 insns/sec
+Completed       9511000 cycles,      10975540 commits:     79964 Hz,      1401 insns/sec
+Completed       9533000 cycles,      10975838 commits:    106398 Hz,      1441 insns/sec
+Completed       9556000 cycles,      10976136 commits:    114729 Hz,      1486 insns/sec
+Completed       9579000 cycles,      10976434 commits:    111008 Hz,      1438 insns/sec
+Completed       9602000 cycles,      10976881 commits:    113440 Hz,      2204 insns/sec
+Completed       9625000 cycles,      10977179 commits:    114723 Hz,      1486 insns/sec
+Completed       9648000 cycles,      10977477 commits:    113298 Hz,      1467 insns/sec
+Completed       9671000 cycles,      10977775 commits:    114721 Hz,      1486 insns/sec
+Completed       9694000 cycles,      10978222 commits:    112124 Hz,      2179 insns/sec
+Completed       9717000 cycles,      10978520 commits:    114563 Hz,      1484 insns/sec
+Completed       9730000 cycles,      10978669 commits:     63554 Hz,       728 insns/sec
+Completed       9742000 cycles,      10978859 commits:     56761 Hz,       898 insns/sec
+Completed       9754000 cycles,      10979116 commits:     57822 Hz,      1238 insns/sec
+Completed       9766000 cycles,      10979265 commits:     58098 Hz,       721 insns/sec
+Completed       9778000 cycles,      10979414 commits:     58413 Hz,       725 insns/sec
+Completed       9790000 cycles,      10979563 commits:     59181 Hz,       734 insns/sec
+Completed       9802000 cycles,      10979712 commits:     58540 Hz,       726 insns/sec
+Completed       9814000 cycles,      10980010 commits:     58673 Hz,      1457 insns/sec
+Completed       9826000 cycles,      10980159 commits:     56975 Hz,       707 insns/sec
+Completed       9838000 cycles,      10980308 commits:     58529 Hz,       726 insns/sec
+Completed       9850000 cycles,      10980457 commits:     59179 Hz,       734 insns/sec
+Completed       9862000 cycles,      10980606 commits:     58275 Hz,       723 insns/sec
+Completed       9874000 cycles,      10980904 commits:     59220 Hz,      1470 insns/sec
+Completed       9886000 cycles,      10981053 commits:     57058 Hz,       708 insns/sec
+Completed       9898000 cycles,      10981202 commits:     58805 Hz,       730 insns/sec
+Completed       9910000 cycles,      10981351 commits:     58866 Hz,       730 insns/sec
+Completed       9922000 cycles,      10981500 commits:     58695 Hz,       728 insns/sec
+Completed       9934000 cycles,      10981649 commits:     59131 Hz,       734 insns/sec
+Completed       9987000 cycles,      10982543 commits:    262226 Hz,      4423 insns/sec
+Completed      10079000 cycles,      10983884 commits:    455189 Hz,      6634 insns/sec
+Completed      10169000 cycles,      10985225 commits:    447655 Hz,      6670 insns/sec
+Completed      10216000 cycles,      10985821 commits:    221848 Hz,      2813 insns/sec
+Completed      10237000 cycles,      10986119 commits:    104005 Hz,      1475 insns/sec
+Completed      10258000 cycles,      10986545 commits:    102642 Hz,      2082 insns/sec
+Completed      10280000 cycles,      10986864 commits:    108552 Hz,      1574 insns/sec
+Completed      10304000 cycles,      10987162 commits:    114609 Hz,      1423 insns/sec
+Completed      10327000 cycles,      10987460 commits:    114705 Hz,      1486 insns/sec
+Completed      10350000 cycles,      10987907 commits:    113961 Hz,      2214 insns/sec
+Completed      10373000 cycles,      10988205 commits:    111452 Hz,      1444 insns/sec
+Completed      10396000 cycles,      10988503 commits:    114878 Hz,      1488 insns/sec
+Completed      10419000 cycles,      10988801 commits:    112100 Hz,      1452 insns/sec
+Completed      10433000 cycles,      10989099 commits:     66306 Hz,      1411 insns/sec
+Completed      10445000 cycles,      10989248 commits:     56134 Hz,       697 insns/sec
+Completed      10457000 cycles,      10989397 commits:     57298 Hz,       711 insns/sec
+Completed      10469000 cycles,      10989546 commits:     58995 Hz,       732 insns/sec
+Completed      10481000 cycles,      10989844 commits:     58149 Hz,      1444 insns/sec
+Completed      10493000 cycles,      10989993 commits:     59134 Hz,       734 insns/sec
+Completed      10505000 cycles,      10990142 commits:     58318 Hz,       724 insns/sec
+Completed      10517000 cycles,      10990291 commits:     56822 Hz,       705 insns/sec
+Completed      10529000 cycles,      10990440 commits:     58141 Hz,       721 insns/sec
+Completed      10541000 cycles,      10990589 commits:     58820 Hz,       730 insns/sec
+Completed      10553000 cycles,      10990887 commits:     58756 Hz,      1459 insns/sec
+Completed      10565000 cycles,      10991036 commits:     58235 Hz,       723 insns/sec
+Completed      10577000 cycles,      10991185 commits:     57230 Hz,       710 insns/sec
+Completed      10589000 cycles,      10991334 commits:     58348 Hz,       724 insns/sec
+Completed      10601000 cycles,      10991483 commits:     59330 Hz,       736 insns/sec
+Completed      10613000 cycles,      10991781 commits:     58407 Hz,      1450 insns/sec
+Completed      10625000 cycles,      10991930 commits:     59128 Hz,       734 insns/sec
+Completed      10637000 cycles,      10992079 commits:     57008 Hz,       707 insns/sec
+Completed      10654000 cycles,      10992377 commits:     83282 Hz,      1459 insns/sec
+Completed      10676000 cycles,      10992675 commits:    106370 Hz,      1440 insns/sec
+Completed      10699000 cycles,      10992973 commits:    113492 Hz,      1470 insns/sec
+Completed      10722000 cycles,      10993271 commits:    113906 Hz,      1475 insns/sec
+Completed      10745000 cycles,      10993718 commits:    112618 Hz,      2188 insns/sec
+Completed      10768000 cycles,      10994016 commits:    113762 Hz,      1473 insns/sec
+Completed      10791000 cycles,      10994314 commits:    114672 Hz,      1485 insns/sec
+Completed      10814000 cycles,      10994612 commits:    113425 Hz,      1469 insns/sec
+Completed      10837000 cycles,      10995059 commits:    114872 Hz,      2232 insns/sec
+Completed      10860000 cycles,      10995357 commits:    113963 Hz,      1476 insns/sec
+Completed      10873000 cycles,      10995506 commits:     61297 Hz,       702 insns/sec
+Completed      10885000 cycles,      10995655 commits:     56423 Hz,       700 insns/sec
+Completed      10897000 cycles,      10995953 commits:     58230 Hz,      1446 insns/sec
+Completed      10909000 cycles,      10996102 commits:     58325 Hz,       724 insns/sec
+Completed      10921000 cycles,      10996251 commits:     59331 Hz,       736 insns/sec
+Completed      10933000 cycles,      10996400 commits:     58640 Hz,       728 insns/sec
+Completed      10945000 cycles,      10996549 commits:     57952 Hz,       719 insns/sec
+Completed      10957000 cycles,      10996847 commits:     58692 Hz,      1457 insns/sec
+Completed      10969000 cycles,      10996996 commits:     58803 Hz,       730 insns/sec
+Completed      10981000 cycles,      10997145 commits:     59004 Hz,       732 insns/sec
+Completed      10993000 cycles,      10997294 commits:     58565 Hz,       727 insns/sec
+Completed      11005000 cycles,      10997443 commits:     57979 Hz,       719 insns/sec
+Completed      11017000 cycles,      10997741 commits:     57832 Hz,      1436 insns/sec
+Completed      11029000 cycles,      10997890 commits:     58993 Hz,       732 insns/sec
+Completed      11041000 cycles,      10998039 commits:     58567 Hz,       727 insns/sec
+Completed      11053000 cycles,      10998188 commits:     58979 Hz,       732 insns/sec
+Completed      11065000 cycles,      10998337 commits:     54982 Hz,       682 insns/sec
+Completed      11077000 cycles,      10998486 commits:     56145 Hz,       697 insns/sec
+Completed      11095000 cycles,      10998784 commits:     87170 Hz,      1443 insns/sec
+Completed      11117000 cycles,      10999082 commits:    108033 Hz,      1463 insns/sec
+Completed      11140000 cycles,      10999529 commits:    114032 Hz,      2216 insns/sec
+Completed      11163000 cycles,      10999827 commits:    113159 Hz,      1466 insns/sec
+Completed      11185000 cycles,      11000125 commits:    108005 Hz,      1462 insns/sec
+Completed      11209000 cycles,      11000572 commits:    113901 Hz,      2121 insns/sec
+Completed      11232000 cycles,      11000870 commits:    114823 Hz,      1487 insns/sec
+Completed      11255000 cycles,      11001168 commits:    114088 Hz,      1478 insns/sec
+Completed      11278000 cycles,      11001466 commits:    114016 Hz,      1477 insns/sec
+Completed      11301000 cycles,      11001913 commits:    109460 Hz,      2127 insns/sec
+Completed      11313000 cycles,      11002062 commits:     57135 Hz,       709 insns/sec
+Completed      11325000 cycles,      11002211 commits:     57109 Hz,       709 insns/sec
+Completed      11337000 cycles,      11002360 commits:     58156 Hz,       722 insns/sec
+Completed      11349000 cycles,      11002509 commits:     58907 Hz,       731 insns/sec
+Completed      11361000 cycles,      11002807 commits:     57584 Hz,      1430 insns/sec
+Completed      11373000 cycles,      11002956 commits:     58882 Hz,       731 insns/sec
+Completed      11385000 cycles,      11003105 commits:     58931 Hz,       731 insns/sec
+Completed      11397000 cycles,      11003254 commits:     58528 Hz,       726 insns/sec
+Completed      11409000 cycles,      11003403 commits:     58998 Hz,       732 insns/sec
+Completed      11421000 cycles,      11003552 commits:     57495 Hz,       713 insns/sec
+Completed      11433000 cycles,      11003850 commits:     59239 Hz,      1471 insns/sec
+Completed      11445000 cycles,      11003999 commits:     57123 Hz,       709 insns/sec
+Completed      11457000 cycles,      11004148 commits:     59101 Hz,       733 insns/sec
+Completed      11469000 cycles,      11004297 commits:     58022 Hz,       720 insns/sec
+Completed      11481000 cycles,      11004446 commits:     58579 Hz,       727 insns/sec
+Completed      11493000 cycles,      11004744 commits:     58916 Hz,      1463 insns/sec
+Completed      11505000 cycles,      11004893 commits:     58516 Hz,       726 insns/sec
+Completed      11517000 cycles,      11005042 commits:     59334 Hz,       736 insns/sec
+Completed      11584000 cycles,      11006085 commits:    333427 Hz,      5190 insns/sec
+Completed      11675000 cycles,      11007426 commits:    454536 Hz,      6698 insns/sec
+Completed      11764000 cycles,      11008618 commits:    444723 Hz,      5956 insns/sec
+Completed      11799000 cycles,      11009214 commits:    173166 Hz,      2948 insns/sec
+Completed      11821000 cycles,      11009512 commits:    105183 Hz,      1424 insns/sec
+Completed      11843000 cycles,      11009810 commits:    105825 Hz,      1433 insns/sec
+Completed      11865000 cycles,      11010108 commits:    109826 Hz,      1487 insns/sec
+Completed      11888000 cycles,      11010555 commits:    113568 Hz,      2207 insns/sec
+Completed      11911000 cycles,      11010853 commits:    114602 Hz,      1484 insns/sec
+Completed      11934000 cycles,      11011151 commits:    113489 Hz,      1470 insns/sec
+Completed      11957000 cycles,      11011449 commits:    113998 Hz,      1477 insns/sec
+Completed      11980000 cycles,      11011896 commits:    112258 Hz,      2181 insns/sec
+Completed      12003000 cycles,      11012194 commits:    114476 Hz,      1483 insns/sec
+Completed      12015000 cycles,      11012343 commits:     59182 Hz,       734 insns/sec
+Completed      12027000 cycles,      11012492 commits:     56473 Hz,       701 insns/sec
+Completed      12039000 cycles,      11012790 commits:     57332 Hz,      1423 insns/sec
+Completed      12051000 cycles,      11012939 commits:     58262 Hz,       723 insns/sec
+Completed      12063000 cycles,      11013088 commits:     59420 Hz,       737 insns/sec
+Completed      12075000 cycles,      11013237 commits:     58458 Hz,       725 insns/sec
+Completed      12087000 cycles,      11013386 commits:     59217 Hz,       735 insns/sec
+Completed      12099000 cycles,      11013535 commits:     57891 Hz,       718 insns/sec
+Completed      12111000 cycles,      11013833 commits:     58590 Hz,      1454 insns/sec
+Completed      12123000 cycles,      11013982 commits:     59003 Hz,       732 insns/sec
+Completed      12135000 cycles,      11014131 commits:     58624 Hz,       727 insns/sec
+Completed      12147000 cycles,      11014280 commits:     58915 Hz,       731 insns/sec
+Completed      12159000 cycles,      11014429 commits:     57642 Hz,       715 insns/sec
+Completed      12171000 cycles,      11014727 commits:     59086 Hz,      1467 insns/sec
+Completed      12183000 cycles,      11014876 commits:     58680 Hz,       728 insns/sec
+Completed      12195000 cycles,      11015025 commits:     59103 Hz,       733 insns/sec
+Completed      12207000 cycles,      11015174 commits:     58921 Hz,       731 insns/sec
+Completed      12219000 cycles,      11015323 commits:     58149 Hz,       722 insns/sec
+Completed      12237000 cycles,      11015621 commits:     86958 Hz,      1439 insns/sec
+Completed      12259000 cycles,      11015919 commits:    108013 Hz,      1463 insns/sec
+Completed      12282000 cycles,      11016366 commits:    113462 Hz,      2205 insns/sec
+Completed      12305000 cycles,      11016664 commits:    113131 Hz,      1465 insns/sec
+Completed      12328000 cycles,      11016962 commits:    113884 Hz,      1475 insns/sec
+Completed      12351000 cycles,      11017260 commits:    113011 Hz,      1464 insns/sec
+Completed      12374000 cycles,      11017707 commits:    114941 Hz,      2233 insns/sec
+Completed      12397000 cycles,      11018005 commits:    113886 Hz,      1475 insns/sec
+Completed      12420000 cycles,      11018303 commits:    114005 Hz,      1477 insns/sec
+Completed      12443000 cycles,      11018601 commits:    110764 Hz,      1435 insns/sec
+Completed      12455000 cycles,      11018899 commits:     57185 Hz,      1420 insns/sec
+Completed      12467000 cycles,      11019048 commits:     57100 Hz,       709 insns/sec
+Completed      12479000 cycles,      11019197 commits:     58172 Hz,       722 insns/sec
+Completed      12491000 cycles,      11019346 commits:     58890 Hz,       731 insns/sec
+Completed      12503000 cycles,      11019495 commits:     57604 Hz,       715 insns/sec
+Completed      12515000 cycles,      11019793 commits:     58896 Hz,      1462 insns/sec
+Completed      12527000 cycles,      11019942 commits:     58958 Hz,       732 insns/sec
+Completed      12539000 cycles,      11020091 commits:     58622 Hz,       727 insns/sec
+Completed      12551000 cycles,      11020240 commits:     59027 Hz,       732 insns/sec
+Completed      12563000 cycles,      11020389 commits:     57572 Hz,       714 insns/sec
+Completed      12575000 cycles,      11020687 commits:     59241 Hz,      1471 insns/sec
+Completed      12587000 cycles,      11020836 commits:     58556 Hz,       727 insns/sec
+Completed      12599000 cycles,      11020985 commits:     59148 Hz,       734 insns/sec
+Completed      12611000 cycles,      11021134 commits:     58346 Hz,       724 insns/sec
+Completed      12623000 cycles,      11021283 commits:     58067 Hz,       720 insns/sec
+Completed      12635000 cycles,      11021432 commits:     59014 Hz,       732 insns/sec
+Completed      12647000 cycles,      11021730 commits:     58448 Hz,      1451 insns/sec
+Completed      12658000 cycles,      11021879 commits:     54755 Hz,       741 insns/sec
+Completed      12676000 cycles,      11022177 commits:     87406 Hz,      1447 insns/sec
+Completed      12698000 cycles,      11022475 commits:    106766 Hz,      1446 insns/sec
+Completed      12721000 cycles,      11022773 commits:    114390 Hz,      1482 insns/sec
+Completed      12744000 cycles,      11023071 commits:    113220 Hz,      1466 insns/sec
+Completed      12767000 cycles,      11023518 commits:    113968 Hz,      2214 insns/sec
+Completed      12790000 cycles,      11023816 commits:    113069 Hz,      1464 insns/sec
+Completed      12813000 cycles,      11024114 commits:    113583 Hz,      1471 insns/sec
+Completed      12836000 cycles,      11024412 commits:    114267 Hz,      1480 insns/sec
+Completed      12859000 cycles,      11024859 commits:    113835 Hz,      2212 insns/sec
+Completed      12882000 cycles,      11025157 commits:    111084 Hz,      1439 insns/sec
+Completed      12894000 cycles,      11025306 commits:     56834 Hz,       705 insns/sec
+Completed      12906000 cycles,      11025455 commits:     57094 Hz,       708 insns/sec
+Completed      12918000 cycles,      11025604 commits:     58319 Hz,       724 insns/sec
+Completed      12930000 cycles,      11025902 commits:     59020 Hz,      1465 insns/sec
+Completed      12942000 cycles,      11026051 commits:     58208 Hz,       722 insns/sec
+Completed      12954000 cycles,      11026200 commits:     58203 Hz,       722 insns/sec
+Completed      12966000 cycles,      11026349 commits:     58477 Hz,       726 insns/sec
+Completed      12978000 cycles,      11026498 commits:     58578 Hz,       727 insns/sec
+Completed      12990000 cycles,      11026796 commits:     58995 Hz,      1465 insns/sec
+Completed      13002000 cycles,      11026945 commits:     58089 Hz,       721 insns/sec
+Completed      13014000 cycles,      11027094 commits:     58302 Hz,       723 insns/sec
+Completed      13026000 cycles,      11027243 commits:     58431 Hz,       725 insns/sec
+Completed      13038000 cycles,      11027392 commits:     59051 Hz,       733 insns/sec
+Completed      13050000 cycles,      11027541 commits:     58911 Hz,       731 insns/sec
+Completed      13062000 cycles,      11027839 commits:     57909 Hz,      1438 insns/sec
+Completed      13074000 cycles,      11027988 commits:     58058 Hz,       720 insns/sec
+Completed      13086000 cycles,      11028137 commits:     58424 Hz,       725 insns/sec
+Completed      13098000 cycles,      11028286 commits:     59371 Hz,       737 insns/sec
+Completed      13166000 cycles,      11029329 commits:    339711 Hz,      5210 insns/sec
+Completed      13258000 cycles,      11030670 commits:    455315 Hz,      6636 insns/sec
+Completed      13346000 cycles,      11032011 commits:    435432 Hz,      6635 insns/sec
+Completed      13381000 cycles,      11032458 commits:    174197 Hz,      2224 insns/sec
+Completed      13403000 cycles,      11032756 commits:    109529 Hz,      1483 insns/sec
+Completed      13426000 cycles,      11033203 commits:    113802 Hz,      2211 insns/sec
+Completed      13449000 cycles,      11033501 commits:    112964 Hz,      1463 insns/sec
+Completed      13472000 cycles,      11033799 commits:    112188 Hz,      1453 insns/sec
+Completed      13494000 cycles,      11034097 commits:    109153 Hz,      1478 insns/sec
+Completed      13516000 cycles,      11034544 commits:    108870 Hz,      2212 insns/sec
+Completed      13538000 cycles,      11034842 commits:    109195 Hz,      1479 insns/sec
+Completed      13561000 cycles,      11035140 commits:    111071 Hz,      1439 insns/sec
+Completed      13584000 cycles,      11035438 commits:    113845 Hz,      1475 insns/sec
+Completed      13596000 cycles,      11035587 commits:     59054 Hz,       733 insns/sec
+Completed      13608000 cycles,      11035885 commits:     56390 Hz,      1400 insns/sec
+Completed      13620000 cycles,      11036034 commits:     58559 Hz,       727 insns/sec
+Completed      13632000 cycles,      11036183 commits:     58132 Hz,       721 insns/sec
+Completed      13644000 cycles,      11036332 commits:     58533 Hz,       726 insns/sec
+Completed      13656000 cycles,      11036481 commits:     58696 Hz,       728 insns/sec
+Completed      13668000 cycles,      11036779 commits:     58848 Hz,      1461 insns/sec
+Completed      13680000 cycles,      11036928 commits:     58709 Hz,       728 insns/sec
+Completed      13692000 cycles,      11037077 commits:     58648 Hz,       728 insns/sec
+Completed      13704000 cycles,      11037226 commits:     58682 Hz,       728 insns/sec
+Completed      13716000 cycles,      11037375 commits:     58527 Hz,       726 insns/sec
+Completed      13728000 cycles,      11037673 commits:     59153 Hz,      1468 insns/sec
+Completed      13740000 cycles,      11037822 commits:     57967 Hz,       719 insns/sec
+Completed      13752000 cycles,      11037971 commits:     59139 Hz,       734 insns/sec
+Completed      13764000 cycles,      11038120 commits:     58355 Hz,       724 insns/sec
+Completed      13776000 cycles,      11038269 commits:     59017 Hz,       732 insns/sec
+Completed      13788000 cycles,      11038418 commits:     58979 Hz,       732 insns/sec
+Completed      13800000 cycles,      11038716 commits:     58557 Hz,      1454 insns/sec
+Completed      13818000 cycles,      11038865 commits:     87460 Hz,       723 insns/sec
+Completed      13839000 cycles,      11039163 commits:    103352 Hz,      1466 insns/sec
+Completed      13862000 cycles,      11039610 commits:    111739 Hz,      2171 insns/sec
+Completed      13885000 cycles,      11039908 commits:    114414 Hz,      1482 insns/sec
+Completed      13908000 cycles,      11040206 commits:    112810 Hz,      1461 insns/sec
+Completed      13931000 cycles,      11040653 commits:    114623 Hz,      2227 insns/sec
+Completed      13953000 cycles,      11040951 commits:    109527 Hz,      1483 insns/sec
+Completed      13975000 cycles,      11041249 commits:    109136 Hz,      1478 insns/sec
+Completed      13998000 cycles,      11041547 commits:    112854 Hz,      1462 insns/sec
+Completed      14021000 cycles,      11041845 commits:    114401 Hz,      1482 insns/sec
+Completed      14034000 cycles,      11042143 commits:     63243 Hz,      1449 insns/sec
+Completed      14046000 cycles,      11042292 commits:     56493 Hz,       701 insns/sec
+Completed      14058000 cycles,      11042441 commits:     57906 Hz,       719 insns/sec
+Completed      14070000 cycles,      11042590 commits:     59347 Hz,       736 insns/sec
+Completed      14082000 cycles,      11042888 commits:     57863 Hz,      1436 insns/sec
+Completed      14094000 cycles,      11043037 commits:     58901 Hz,       731 insns/sec
+Completed      14106000 cycles,      11043186 commits:     58694 Hz,       728 insns/sec
+Completed      14118000 cycles,      11043335 commits:     58826 Hz,       730 insns/sec
+Completed      14130000 cycles,      11043484 commits:     58733 Hz,       729 insns/sec
+Completed      14142000 cycles,      11043633 commits:     58372 Hz,       724 insns/sec
+Completed      14154000 cycles,      11043931 commits:     58623 Hz,      1455 insns/sec
+Completed      14166000 cycles,      11044080 commits:     58346 Hz,       724 insns/sec
+Completed      14178000 cycles,      11044229 commits:     59371 Hz,       737 insns/sec
+Completed      14190000 cycles,      11044378 commits:     58318 Hz,       724 insns/sec
+Completed      14202000 cycles,      11044527 commits:     58780 Hz,       729 insns/sec
+Completed      14214000 cycles,      11044825 commits:     58411 Hz,      1450 insns/sec
+Completed      14226000 cycles,      11044974 commits:     58706 Hz,       728 insns/sec
+Completed      14238000 cycles,      11045123 commits:     59107 Hz,       733 insns/sec
+Completed      14255000 cycles,      11045421 commits:     83716 Hz,      1467 insns/sec
+Completed      14277000 cycles,      11045719 commits:    108945 Hz,      1475 insns/sec
+Completed      14300000 cycles,      11046017 commits:    113526 Hz,      1470 insns/sec
+Completed      14323000 cycles,      11046315 commits:    113464 Hz,      1470 insns/sec
+Completed      14346000 cycles,      11046762 commits:    114292 Hz,      2221 insns/sec
+Completed      14369000 cycles,      11047060 commits:    112154 Hz,      1453 insns/sec
+Completed      14392000 cycles,      11047358 commits:    114585 Hz,      1484 insns/sec
+Completed      14415000 cycles,      11047656 commits:    113145 Hz,      1465 insns/sec
+Completed      14438000 cycles,      11048103 commits:    113845 Hz,      2212 insns/sec
+Completed      14461000 cycles,      11048401 commits:    114282 Hz,      1480 insns/sec
+Completed      14474000 cycles,      11048550 commits:     60620 Hz,       694 insns/sec
+Completed      14486000 cycles,      11048699 commits:     57153 Hz,       709 insns/sec
+Completed      14498000 cycles,      11048997 commits:     57958 Hz,      1439 insns/sec
+Completed      14510000 cycles,      11049146 commits:     57434 Hz,       713 insns/sec
+Completed      14522000 cycles,      11049295 commits:     58929 Hz,       731 insns/sec
+Completed      14534000 cycles,      11049444 commits:     58342 Hz,       724 insns/sec
+Completed      14546000 cycles,      11049593 commits:     58687 Hz,       728 insns/sec
+Completed      14558000 cycles,      11049891 commits:     57378 Hz,      1424 insns/sec
+Completed      14570000 cycles,      11050040 commits:     55810 Hz,       692 insns/sec
+Completed      14582000 cycles,      11050189 commits:     59146 Hz,       734 insns/sec
+Completed      14594000 cycles,      11050338 commits:     58537 Hz,       726 insns/sec
+Completed      14606000 cycles,      11050487 commits:     59178 Hz,       734 insns/sec
+Completed      14618000 cycles,      11050636 commits:     56887 Hz,       706 insns/sec
+Completed      14630000 cycles,      11050934 commits:     58456 Hz,      1451 insns/sec
+Completed      14642000 cycles,      11051083 commits:     58737 Hz,       729 insns/sec
+Completed      14654000 cycles,      11051232 commits:     58259 Hz,       723 insns/sec
+Completed      14666000 cycles,      11051381 commits:     59193 Hz,       734 insns/sec
+Completed      14678000 cycles,      11051530 commits:     56252 Hz,       698 insns/sec
+Completed      14738000 cycles,      11052424 commits:    297678 Hz,      4435 insns/sec
+Completed      14830000 cycles,      11058487 commits:    454640 Hz,     29961 insns/sec
+Completed      14926000 cycles,      11101292 commits:    479338 Hz,    213730 insns/sec
+Completed      15016000 cycles,      11147372 commits:    447688 Hz,    229216 insns/sec
+Completed      15103000 cycles,      11192012 commits:    432511 Hz,    221923 insns/sec
+Completed      15193000 cycles,      11238150 commits:    446800 Hz,    229049 insns/sec
+Completed      15282000 cycles,      11283812 commits:    442733 Hz,    227147 insns/sec
+Completed      15373000 cycles,      11330412 commits:    454956 Hz,    232977 insns/sec
+Completed      15466000 cycles,      11378092 commits:    463117 Hz,    237434 insns/sec
+Completed      15556000 cycles,      11423953 commits:    446343 Hz,    227442 insns/sec
+Completed      15647000 cycles,      11470692 commits:    452067 Hz,    232188 insns/sec
+Completed      15740000 cycles,      11518356 commits:    463217 Hz,    237406 insns/sec
+Completed      15833000 cycles,      11566052 commits:    462693 Hz,    237297 insns/sec
+Completed      15926000 cycles,      11613592 commits:    462556 Hz,    236451 insns/sec
+Completed      16017000 cycles,      11660012 commits:    450066 Hz,    229583 insns/sec
+Completed      16110000 cycles,      11707732 commits:    460997 Hz,    236546 insns/sec
+Completed      16202000 cycles,      11754952 commits:    458920 Hz,    235545 insns/sec
+Completed      16295000 cycles,      11802672 commits:    461791 Hz,    236953 insns/sec
+Completed      16388000 cycles,      11850312 commits:    461516 Hz,    236415 insns/sec
+Completed      16477000 cycles,      11896012 commits:    444188 Hz,    228083 insns/sec
+Completed      16567000 cycles,      11942212 commits:    445782 Hz,    228834 insns/sec
+Completed      16659000 cycles,      11989352 commits:    458725 Hz,    235047 insns/sec
+Completed      16752000 cycles,      12036912 commits:    460220 Hz,    235355 insns/sec
+Completed      16842000 cycles,      12078427 commits:    447402 Hz,    206377 insns/sec
+Completed      16931000 cycles,      12123887 commits:    443056 Hz,    226307 insns/sec
+Completed      17021000 cycles,      12170107 commits:    448323 Hz,    230239 insns/sec
+Completed      17111000 cycles,      12216259 commits:    448397 Hz,    229937 insns/sec
+Completed      17201000 cycles,      12262287 commits:    448266 Hz,    229253 insns/sec
+Completed      17292000 cycles,      12308727 commits:    452965 Hz,    231161 insns/sec
+Completed      17382000 cycles,      12354807 commits:    447083 Hz,    228906 insns/sec
+Completed      17474000 cycles,      12402007 commits:    456477 Hz,    234192 insns/sec
+Completed      17568000 cycles,      12450207 commits:    466089 Hz,    238994 insns/sec
+Completed      17662000 cycles,      12498487 commits:    465307 Hz,    238989 insns/sec
+Completed      17756000 cycles,      12546687 commits:    465941 Hz,    238918 insns/sec
+Completed      17848000 cycles,      12593847 commits:    456283 Hz,    233894 insns/sec
+Completed      17941000 cycles,      12641627 commits:    464747 Hz,    238770 insns/sec
+Completed      18034000 cycles,      12689247 commits:    460731 Hz,    235914 insns/sec
+Completed      18128000 cycles,      12737225 commits:    466275 Hz,    237988 insns/sec
+Completed      18221000 cycles,      12784987 commits:    463198 Hz,    237884 insns/sec
+Completed      18313000 cycles,      12832159 commits:    459613 Hz,    235661 insns/sec
+Completed      18406000 cycles,      12879867 commits:    464598 Hz,    238334 insns/sec
+Completed      18498000 cycles,      12926887 commits:    459798 Hz,    234997 insns/sec
+Completed      18591000 cycles,      12974367 commits:    459656 Hz,    234671 insns/sec
+Completed      18684000 cycles,      13022067 commits:    462009 Hz,    236965 insns/sec
+Completed      18775000 cycles,      13068787 commits:    454968 Hz,    233583 insns/sec
+Completed      18868000 cycles,      13116467 commits:    462118 Hz,    236922 insns/sec
+Completed      18960000 cycles,      13163707 commits:    458889 Hz,    235629 insns/sec
+Completed      19053000 cycles,      13211347 commits:    460655 Hz,    235974 insns/sec
+Completed      19145000 cycles,      13258527 commits:    459789 Hz,    235792 insns/sec
+Completed      19234000 cycles,      13304187 commits:    443333 Hz,    227444 insns/sec
+Completed      19326000 cycles,      13351227 commits:    458141 Hz,    234249 insns/sec
+Completed      19418000 cycles,      13398207 commits:    457809 Hz,    233781 insns/sec
+Completed      19510000 cycles,      13445367 commits:    455400 Hz,    233442 insns/sec
+Completed      19603000 cycles,      13493107 commits:    460148 Hz,    236209 insns/sec
+Completed      19695000 cycles,      13540307 commits:    456798 Hz,    234357 insns/sec
+Completed      19787000 cycles,      13587227 commits:    459369 Hz,    234278 insns/sec
+Completed      19878000 cycles,      13633787 commits:    454317 Hz,    232450 insns/sec
+Completed      19971000 cycles,      13681468 commits:    460343 Hz,    236017 insns/sec
+Invalid opcode at 0xffffffffff6001a3: split_invalid_basic_blocks 0, first_insn_in_bb? 0
